@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events – DeltaBuddy</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body { font-family: Arial, sans-serif; background: #f9f9f9; margin: 0; padding: 2rem; }
+    header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; }
+    .back-dashboard { background: #3b82f6; color: white; padding: 0.5rem 1rem; border-radius: 5px; text-decoration: none; }
+    #economicCalendarWidget { width: 100%; min-height: 700px; background: white; padding: 1rem; border-radius: 8px; }
+  </style>
+  <script type="text/javascript" src="https://sslcharts.fxstreet.com/widgets/Scripts/FXSCalendar.js"></script>
+</head>
+<body>
+  <header>
+    <img src="assets/deltabuddy-logo.png" alt="DeltaBuddy Logo" style="width: 120px;">
+    <a class="back-dashboard" href="dashboard.html">⬅ Back to Dashboard</a>
+  </header>
+  <h1>Economic Calendar</h1>
+  <div id="economicCalendarWidget"></div>
+  <script type="text/javascript">
+    fxCalendar('economicCalendarWidget', {
+      width: '100%',
+      height: '700',
+      language: 'en'
+    });
+  </script>
+</body>
+</html>
